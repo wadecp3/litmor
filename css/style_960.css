@@ -1,0 +1,80 @@
+ /*>=960 - 1199  的设备*/  
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	body{font-size: 14px}
+		#header{
+			height:70px;
+		}
+		#header .header-title img{
+			width:100px;
+			margin-right:20px;
+			margin-top:-10px;
+		}
+		#header .header-title .title{
+			font-size:18px;
+		}
+		/* banner */
+		.banner > button{
+			position:absolute;
+			bottom:25%;
+			right:22%;
+			width:26%;
+			height:30px;
+			font-size:12px;
+			font-weight:300;
+			color:rgba(88,88,90,1);
+		}
+		
+		
+		/* 头部导航 */
+		/* #header-menu{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height:100px;
+			max-height: 145px;
+		}
+		#header-menu .menu-item{
+			width:30%;
+			text-align: center;
+		}
+		#header-menu > .menu-item .logo{
+			margin:20px 0px;
+		}
+		#header-menu > .menu-item .logo img{
+			width:72px;
+		}
+		.menu-item .menu-list{
+			list-style: none;
+			display: flex;
+		}
+		.menu-item .menu-list li {
+			width:33%;
+		}
+		.menu-item .menu-list li a{
+			font-size:14px;
+			color:#7C8287;
+		}
+		#header-menu .sign-in{
+			position:absolute;
+			right:18%;
+			top:6px;
+			width:88px;
+			padding:20px 0px;
+			background: url(../img/sign_in.png) no-repeat center;
+			background-position:left center;
+			background-size:16px 20px;
+		}
+		.sign-in a{
+			position:absolute;
+			top:10px;
+			right:20%;
+			font-size:14px;
+			line-height: 24px;
+			font-family:Helvetica-Light;
+			font-weight:300;
+			color:rgba(124,130,135,1);
+		} */
+		/* 头部菜单 */
+		
+		
+}

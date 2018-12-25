@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>App</title>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=86f4982b-87cf-4849-8367-a80a81d367f5"> </script>
+		<style>
+			*{
+				color:#7C8287;
+			}
+			.submenu1 .submenu-right .submenu-list .submenu-list-item:nth-child(2){
+				font-weight: 600;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="page">
+			<div id="header-model"></div>
+			<div id="page-content">
+				<div id="submenu"></div>
+				<div class="app-support">
+					<p class="title">App Support</p>
+				</div>
+				<div class="video-tutorials">
+					<div class="description">
+						Check video tutorials for device setup and App usage.
+					</div>
+					<div class="video-tutorials-list">
+						<div class="video-tutorials-list-left">
+							<h5>Video Tutorials</h5>
+							<ul class="video-list">
+								<li>
+									<video src=""></video>
+									<div>Step1</div>
+								</li>
+								<li>
+									<video src=""></video>
+									<div>Step2</div>
+								</li>
+								<li>
+									<video src=""></video>
+									<div>Step3</div>
+								</li>
+								<li>
+									<video src=""></video>
+									<div>Step4</div>
+								</li>
+							</ul>
+						</div>
+						<div class="video-tutorials-list-right">
+							<div class="title">
+								Download App
+							</div>
+							<div class="download">
+								<div class="download-item">
+									<a href="https://play.google.com/store/apps/details?id=com.znkj.cloud.camera">
+										<img src="img/app-android.png" alt="">
+									</a>
+								</div>
+								<div class="download-item">
+									<a href="https://itunes.apple.com/us/app/litmor/id1423088743?mt=8">
+										<img src="img/app-ios.png" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="footer-model"></div>
+		</div>
+		
+		<script>
+			$(document).ready(function(){
+				$('#header-model').load('header.html');
+				$('#footer-model').load('footer.html');
+				$('#submenu').load('submenu1.html');
+			})
+		</script>
+	</body>
+</html>

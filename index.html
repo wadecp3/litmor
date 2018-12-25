@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Litmor</title>
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+		<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=86f4982b-87cf-4849-8367-a80a81d367f5"> </script>
+		<style>
+			html {font-size: 62.5%; /*10 ÷ 16 × 100% = 62.5%*/}
+			#header a{
+				display: inline-block;
+				width:100px;
+				height:40px
+			}
+			#launcher{
+				bottom:100px !important;
+			}
+			.share-input{
+				position:absolute;
+				width:50%;
+				right:0;
+				top:0;
+				bottom:0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<div class="header-title">
+				<a style="display: inline-flex;align-items: center;" href="home_page.html"><img src="img/logo.png" alt=""></a>
+				<span class="title">THANK YOU FOR SIGNING UP</span>
+			</div>
+		</div>
+		<div class="banner">
+			<img src="img/activity.png" alt="">
+			<div class="share-input">
+				<div data-vl-widget="embedForm"></div> 
+			</div>
+		</div>
+		<div class="share">
+			<div data-vl-widget="milestoneWidget"></div>
+		</div>
+		<div>
+			<div data-vl-widget="referralCountWidget"></div>
+		</div>
+		<script>
+			!function(){var a=window.VL=window.VL||{};return a.instances=a.instances||{},a.invoked?void(window.console&&console.error&&console.error("VL snippet loaded twice.")):(a.invoked=!0,void(a.load=function(b,c,d){var e={};e.publicToken=b,e.config=c||{};var f=document.createElement("script");f.type="text/javascript",f.id="vrlps-js",f.defer=!0,f.src="https://app.viral-loops.com/client/vl/vl.min.js";var g=document.getElementsByTagName("script")[0];return g.parentNode.insertBefore(f,g),f.onload=function(){a.setup(e),a.instances[b]=e},e.identify=e.identify||function(a,b){e.afterLoad={identify:{userData:a,cb:b}}},e.pendingEvents=[],e.track=e.track||function(a,b){e.pendingEvents.push({event:a,cb:b})},e.pendingHooks=[],e.addHook=e.addHook||function(a,b){e.pendingHooks.push({name:a,cb:b})},e.$=e.$||function(a){e.pendingHooks.push({name:"ready",cb:a})},e}))}();var campaign=VL.load("40plpz8p5eHWA99OQI14P3ec5mI",{autoLoadWidgets:!0});campaign.addHook("boot",function(){campaign.widgets.create("rewardingWidget",{container:"body",position:"bottom-left"}),campaign.widgets.create("rewardingWidgetTrigger",{container:"body",position:"bottom-right"})});</script> 
+	</body>
+</html>

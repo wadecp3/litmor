@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Litmor</title>
+		<meta name="format-detection" content="telephone=no" />
+		<meta name ="viewport" content ="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+		<script src="js/jquery.min.js"></script>
+		<script src="https://cdn.bootcss.com/vue/2.5.21/vue.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" href="css/style_480.css">
+		<style>
+			html {font-size: 62.5%; /*10 ÷ 16 × 100% = 62.5%*/}
+			#header a{
+				display: inline-block;
+				width:100px;
+				height:40px
+			}
+			 
+			#love{
+				display: none;
+			}
+			.form-sign-in{
+				display: block;
+			}
+			.form-sign-up{
+				display: none;
+			}
+		</style>
+	</head>
+	<body id="body">
+		<div id="header-menu">
+			<div class="menu-item">
+				<div id="menu">
+					Menu
+				</div>
+				<div class="logo">
+					<a href="home_page.html"><img src="img/logo2.png" alt=""></a>
+				</div>
+				<ul class="menu-list">
+					<li><a href="product.html">Products</a></li>
+					<li><a href="support.html">Support</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+			</div>
+			<div class="sign-in">
+				<a href="javascript:void(0)">Sign in</a>
+			</div>
+		</div>
+		<div id="modal"></div>
+		<div id="sign-in">
+			<div class="box-container">
+				<div class="box-container-content">
+					<span class="close">
+						<img src="img/close.png" alt="">
+					</span>
+					<div class="tab-nav">
+						<div class="sign-ins">Sign in</div>
+						<div class="sign-ups">Sign up</div>
+					</div>
+					
+					<div class="form form-sign-in">
+						<div>
+							<input type="text" placeholder="Email address">
+						</div>
+						<div>
+							<input type="text" placeholder="Password">
+						</div>
+						<div>
+							<input type="text" placeholder="Re-enter password">
+						</div>
+						<div class="forgot-password">
+							<a href="">Forgot password  > </a>
+						</div>
+						<div>
+							<button class="Sign-up">Sign in</button>
+						</div>
+					</div>
+					
+					<div class="form form-sign-up">
+						<div>
+							<input type="text" placeholder="Email address">
+						</div>
+						<div>
+							<input type="text" placeholder="Password">
+						</div>
+						<div>
+							<input type="text" placeholder="Re-enter password">
+						</div>
+						<div>
+							<input type="checkbox">
+							<span>I agree with the terms of services.</span>
+						</div>
+						<div>
+							<button class="Sign-up">Sign up</button>
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+		</div>
+		
+		<div id="litmor-plus">
+			<div class="box-container">
+				<span class="close-commin-soon">
+					<img src="img/close.png" alt="">
+				</span>
+				<div style="text-align: center;font-size:16px;font-weight:600;color:#7C8287;padding-top:20px;">
+					commin-soon
+				</div>
+			</div>
+		</div>
+		<script>
+			var mo=function(e){e.preventDefault();};
+			$(document).ready(function(){
+				$('#menu').click(function() {
+					$(".menu-list").slideToggle("fast");
+					$("body").height( $(window).height());
+					stop()
+				})
+				
+				function stop(){
+					if($(".menu-list")){
+						document.body.style.overflow='hidden';        
+						document.addEventListener("touchmove",mo,false);//禁止页面滑动
+					}
+					
+				}
+				
+				$('.litmor-pluss').click(function(){
+					$('#modal').show()
+					$('#litmor-plus').show()
+				})
+				
+				$('.sign-in').click(function(){
+					$('#modal').show()
+					$('#sign-in').show()
+				})
+				
+				$('.sign-ins').click(function(){
+					$('.form-sign-in').show()
+					$('.form-sign-up').hide()
+					if($('.sign-ins')) {
+						$('.sign-ins').css('font-weight','600')
+						$('.sign-ups').css('font-weight','500')
+					}
+				})
+				$('.sign-ups').click(function(){
+					$('.form-sign-in').hide()
+					$('.form-sign-up').show()
+					if($('.sign-ups')) {
+						$('.sign-ups').css('font-weight','600')
+						$('.sign-ins').css('font-weight','500')
+					}
+				})
+				
+				$('.close').click(function(){
+					$('#modal').hide()
+					$('#sign-in').hide()
+				})
+				
+				$('.close-commin-soon').click(function(){
+					$('#modal').hide()
+					$('#litmor-plus').hide()
+				})
+			});
+		</script>
+	</body>
+</html>

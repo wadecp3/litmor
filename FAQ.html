@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>FAQ</title>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://cdn.bootcss.com/vue/2.5.21/vue.min.js"></script>
+		<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=86f4982b-87cf-4849-8367-a80a81d367f5"> </script>
+		<style>
+			.submenu1 .submenu-right .submenu-list .submenu-list-item:last-child{
+				font-weight: 600;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="page">
+			<div id="header-model"></div>
+			<div id="page-content">
+				<div id="submenu"></div>
+				<div class="FAQ">
+					<img src="img/faq-banner.png" alt="">
+					<p class="title">FAQ</p>
+				</div>
+				<div class="faq-content">
+					<ul class="question-list">
+						<li v-for="(item,index) in list" class="question-list-item" @click="jumpArticleDetail(index)">
+							<h5>{{item.name}}</h5>
+							<p>{{item.article}}</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="footer-model"></div>
+		</div>
+	
+		<script>
+			$(document).ready(function(){
+				$('#header-model').load('header.html');
+				$('#footer-model').load('footer.html');
+				$('#submenu').load('submenu1.html');
+			})
+		</script>
+		<script>
+			var app = new Vue({
+				el: '#page',
+				data:{
+					list:[
+						{
+							name:'QUESTION TITLE',
+							article:'近年来，国际学界在全水解电极催化剂的设计制备方面，近年来，国际学界在全水解电极催化剂的设计制备方面，取得了令人瞩目的进展。但是，寻找能在中性水电解质中同时展现高活性、高稳定性的非贵金属电催化剂仍是一大挑战'
+						},
+						{
+							name:'QUESTION TITLE',
+							article:'近年来，国际学界在全水解电极催化剂的设计制备方面，近年来，国际学界在全水解电极催化剂的设计制备方面，取得了令人瞩目的进展。但是，寻找能在中性水电解质中同时展现高活性、高稳定性的非贵金属电催化剂仍是一大挑战'
+						},
+						{
+							name:'QUESTION TITLE',
+							article:'近年来，国际学界在全水解电极催化剂的设计制备方面，近年来，国际学界在全水解电极催化剂的设计制备方面，取得了令人瞩目的进展。但是，寻找能在中性水电解质中同时展现高活性、高稳定性的非贵金属电催化剂仍是一大挑战'
+						},
+						{
+							name:'QUESTION TITLE',
+							article:'近年来，国际学界在全水解电极催化剂的设计制备方面，近年来，国际学界在全水解电极催化剂的设计制备方面，取得了令人瞩目的进展。但是，寻找能在中性水电解质中同时展现高活性、高稳定性的非贵金属电催化剂仍是一大挑战'
+						},
+						{
+							name:'QUESTION TITLE',
+							article:'近年来，国际学界在全水解电极催化剂的设计制备方面，近年来，国际学界在全水解电极催化剂的设计制备方面，取得了令人瞩目的进展。但是，寻找能在中性水电解质中同时展现高活性、高稳定性的非贵金属电催化剂仍是一大挑战'
+						}
+					]
+				},
+				methods:{
+					jumpArticleDetail (index) {
+						window.location.href = 'FAQ_detail.html'
+					}
+				}
+			})
+		</script>
+	</body>
+</html>

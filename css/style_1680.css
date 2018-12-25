@@ -1,0 +1,27 @@
+
+/*>=1680的设备*/
+@media (min-width: 1680px) {
+  body{font-size: 16px;}
+    #header{
+      height:80px;
+    }
+    #header > .header-title{
+      font-size:18px;
+      font-weight:400;
+    }
+    #header .header-title img{
+      width:20%;
+      margin-right:12px;
+    }
+    
+    /* banner图 */
+    .banner button{
+      position:absolute;
+      width:502px;
+      height:45px;
+      font-size:14px;
+      font-weight:300;
+      color:rgba(88,88,90,1);
+    }
+  } 
+  
